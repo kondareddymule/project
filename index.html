@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/w3schools_green.jpg">
 </head>
-<body>
+<body id="page">
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
     <a href="https://www.w3schools.com">This is a link</a>
@@ -112,5 +112,23 @@
         <input type="text" id="lname" name="lname" value="Doe"><br><br>
         <input type="submit" value="Submit">
     </form>
+    
+    <p id="demo"></p>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <button type="button" onclick="document.getElementById('page').style.backgroundColor = 'black'">Change Theme</button>
+    <button type="button" onclick="document.getElementById('page').style.backgroundColor = 'blue'">Change Theme</button>
+
+
+    <h1>
+        Write, edit and run HTML, CSS, and JavaScript code online.
+    </h1>
+    <p id="para">
+        Our HTML editor updates the webview automatically in real-time as you write code.
+    </p>
+    <button id="bt">ClickMe</button>
+    <script src="index.js"></script> 
 </body>
 </html>
